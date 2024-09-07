@@ -1,0 +1,19 @@
+/* Tailwind CSS styles are used in this example */
+
+/* Additional styles for Home component */
+.home-container {
+    @apply w-full h-auto flex flex-col items-center justify-center bg-primary;
+  }
+  
+  .section-title {
+    @apply text-2xl font-bold text-textColor mb-4;
+  }
+  
+  .song-section {
+    @apply w-full my-6 flex flex-col;
+  }
+  
+  .scroll-container {
+    @apply flex gap-4 overflow-x-scroll scrollbar-none;
+  }
+  

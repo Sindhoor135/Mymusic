@@ -1,0 +1,69 @@
+.player-container {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  width: 350px; /* Increased width */
+  padding: 15px; /* Increased padding */
+  z-index: 1000;
+  transition: all 0.3s ease;
+}
+
+.player-container.minimized {
+  background: #333;
+  width: 80px; /* Increased width for the minimized state */
+  height: 80px; /* Increased height for the minimized state */
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  padding: 0;
+}
+
+.player-controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.control-icon, .play-pause-btn, .minimize-icon {
+  font-size: 24px; /* Increased font size */
+  cursor: pointer;
+  margin: 0 5px;
+}
+
+.song-info {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+
+.song-title {
+  font-weight: bold;
+  margin: 0;
+}
+
+.song-artist {
+  color: #555;
+  margin: 0;
+}
+
+.player-minimized {
+  background: #333;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.player-minimized-icon {
+  width: 60px; /* Icon size in minimized state */
+  height: 60px;
+  border-radius: 50%;
+}

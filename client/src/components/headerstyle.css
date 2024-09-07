@@ -1,0 +1,120 @@
+/* Header Styles */
+header {
+  background-color: #ffffff; /* White background for the header */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for a modern look */
+  position: relative; /* Ensures the dropdown menu is positioned correctly */
+  display: flex;
+  align-items: center;
+  height: 80px; /* Adjusted height for better spacing */
+  padding: 0 1rem; /* Padding for spacing */
+}
+
+header img {
+  width: 64px; /* Standard logo width */
+  height: auto; /* Maintain aspect ratio */
+  margin-right: 1rem; /* Space between logo and navigation */
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  list-style: none; /* Remove default list styling */
+  margin: 0;
+  padding: 0;
+  flex: 1; /* Make the navigation take up available space */
+}
+
+nav li {
+  margin: 0 1rem; /* Horizontal spacing between navigation items */
+  position: relative; /* For positioning dropdowns */
+}
+
+nav a {
+  text-decoration: none; /* Remove underline from links */
+  color: #333; /* Dark text color for links */
+  font-size: 1rem; /* Standard font size */
+  font-weight: 500; /* Slightly bold font for better readability */
+  transition: color 0.3s ease, font-weight 0.3s ease, transform 0.3s ease; /* Smooth transition effects */
+  display: flex; 
+  align-items: center; /* Center align items vertically */
+}
+
+nav a:hover, nav a.active {
+  color: #007bff; /* Highlight color for active or hovered links */
+  font-weight: 700; /* Bold font on hover or active */
+  transform: translateY(-2px); /* Subtle lift effect on hover */
+}
+
+.user-menu {
+  display: flex;
+  align-items: center;
+  margin-left: auto; /* Push the user menu to the right */
+  cursor: pointer;
+  position: relative; /* Needed for dropdown positioning */
+}
+
+.user-menu img {
+  width: 48px; /* Standard profile image width */
+  height: 48px; /* Standard profile image height */
+  border-radius: 50%; /* Circle shape */
+  object-fit: cover; /* Cover the profile image area */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Shadow for profile image */
+  transition: box-shadow 0.3s ease; /* Smooth shadow transition */
+}
+
+.user-menu img:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+}
+
+.user-menu div {
+  margin-left: 0.5rem; /* Space between profile image and text */
+}
+
+.user-menu p {
+  margin: 0;
+}
+
+.user-menu p:first-of-type {
+  color: #333; /* Dark text color for user name */
+  font-weight: 600; /* Bold font for user name */
+}
+
+.user-menu p:last-of-type {
+  display: flex;
+  align-items: center;
+  color: #666; /* Lighter color for the membership info */
+}
+
+.user-menu p:last-of-type .fa-crown {
+  margin-left: 0.25rem; /* Space between text and crown icon */
+  font-size: 1rem; /* Size of the crown icon */
+  color: #f5c518; /* Gold color for the crown icon */
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%; /* Position below the user menu */
+  right: 0;
+  width: 220px; /* Width of the dropdown menu */
+  padding: 1rem;
+  background-color: #ffffff; /* White background for dropdown */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for dropdown */
+  border-radius: 8px; /* Rounded corners for dropdown */
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem; /* Space between dropdown items */
+  z-index: 1000; /* Ensure dropdown is above other elements */
+}
+
+.dropdown-menu p {
+  margin: 0;
+  color: #333; /* Dark text color for dropdown items */
+  font-size: 1rem; /* Standard font size for dropdown items */
+  cursor: pointer; /* Pointer cursor for clickable items */
+  transition: color 0.3s ease, font-weight 0.3s ease; /* Smooth transition effects */
+}
+
+.dropdown-menu p:hover {
+  color: #007bff; /* Highlight color on hover */
+  font-weight: 600; /* Bold font on hover */
+}
